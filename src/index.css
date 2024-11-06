@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Buttons */
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #211951 100%,
+    /* #3bace2 50.63%,
+    #c4ff63 100%,
+    #2622d2 117.04% */
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(38, 34, 210, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #211951 100%,
+    /* #3bace2 50.63%,
+    #2622d2 100%,
+    #1c1b1e 117.04% */
+  );
+}
+
+/* Gradient backgrounds */
+.gradient,
+.active {
+  background: linear-gradient(
+    92.23deg,
+    #211951 100%,
+    /* #3bace2 50.63%,
+    #c4ff63 100%,
+    #2622d2 117.04% */
+  );
+}
+
+.active {
+  color: #fff;
+  padding: 1rem;
+  border-radius: 100%;
+}
+
+/* Body text, fonts, and section styling */
+@layer base {
+  body {
+    @apply font-secondary text-lg leading-8 text-white;
+    background-color: #F4F6FF; /* Change body background to match the primary blue */
+  }
+
+  .h2 {
+    @apply font-primary text-[32px] mb-6 tracking-[10%] uppercase text-white;
+  }
+
+  .h3 {
+    @apply font-primary font-semibold text-[26px] mb-6 leading-[46px] text-white;
+  }
+
+  .btn {
+    @apply rounded-full font-primary text-blue-950 font-medium;
+  }
+
+  .btn-sm {
+    @apply h-[48px] px-6 text-sm;
+  }
+
+  .btn-lg {
+    @apply h-[56px] px-10 text-base ;
+  }
+
+  .btn-link {
+    @apply text-base text-blue-950; /* Make link buttons white */
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#211951] to-[#211951] font-bold font-primary hover:from-[#211951] hover:to-[#211951];
+  }
+
+  .section {
+    @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    background-color: #F4F6FF; /* Use accent green for sections ...change back to #50C4ED */ 
+  }
+}
+
+.slick-slide > div {
+  margin: 0 10px;
+  color: #1117d2;
+}
+/* ergihieuogr */
